@@ -1,1 +1,16 @@
+cffi==1.8.2
+cycler==0.10.0
+fudge==1.1.0
+matplotlib==1.5.3
+numpy==1.11.1
+PyAudio==0.2.9
+pycparser==2.14
+pydub==0.16.5
+pyparsing==2.1.9
+python-dateutil==2.5.3
+pytz==2016.6.1
+requests==2.11.1
+simplejson==3.8.2
+six==1.10.0
 soundcloud==0.5.0
+sounddevice==0.3.5
