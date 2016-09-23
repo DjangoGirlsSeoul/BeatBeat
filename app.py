@@ -1,16 +1,15 @@
 import soundcloud
-import soundscrape
 import pygst
 import gst
 
 QUERY = 'girlsgeneration'
 CLIENT_ID = ''
-client = soundcloud.Client(client_id="")
+client = soundcloud.Client(client_id=CLIENT_ID)
 track_url = 'http://soundcloud.com/forss/flickermood'
 tracks = client.get('/tracks', q=QUERY, order='hotness', limit=1)
 for track in tracks:
   print vars(track)
-  stream_url = track.stream_url
+  stream_url = track.attachments_uri
 
 def on_tag(bus, msg):
   taglist = msg.parse_tag()
