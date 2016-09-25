@@ -4,7 +4,7 @@ import sounddevice as sd
 import numpy as np
 # sd.default.samplerate = 44100
 import matplotlib as mpl
-mpl.use('TkAgg') 
+mpl.use('TkAgg')
 import matplotlib.pyplot as plt
 # from matplotlib.animation import FuncAnimation
 import matplotlib.animation as animation
