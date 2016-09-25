@@ -1,6 +1,6 @@
 {
   "name": "Beatbeat",
   "tagline": "",
-  "body": "### BeatBeat\r\n스마트하게 음악을 눈으로 즐기 수 잇는 프로젝트입니다! Google Speech api를 이용하여 SoundCloud의 음악을 검색 한 후, Play하면 사운드를 LED Matrix에 시각화 해줍니다. 우리는 이 프로젝트를 위해 소프트웨어 측면에서는 Google Speech api, Python, Gstreamer, Cava를 이용 했고, 하드웨어는 라즈베리파이와 LED Matrix를 이용 했어요! 함께 음악을 눈으로 즐겨 볼까요? \r\n\r\n### Video\r\n\r\n\r\n### Authors and Contributors\r\n@jinpark, @hassanabidpk  and @mojosoeun\r\n\r\n### Contact\r\n[contact](mojosoeun@gmail.com)",
+  "body": "### BeatBeat\r\n스마트하게 음악을 눈으로 즐기 수 잇는 프로젝트입니다! Google Speech api를 이용하여 SoundCloud의 음악을 검색 한 후, Play하면 사운드를 LED Matrix에 시각화 해줍니다. 우리는 이 프로젝트를 위해 소프트웨어 측면에서는 Google Speech api, Python, Gstreamer, Cava를 이용 했고, 하드웨어는 라즈베리파이와 LED Matrix를 이용 했어요! 함께 음악을 눈으로 즐겨 볼까요? \r\n\r\n### Video\r\n\r\n\r\n### Authors and Contributors\r\n@jinpark, @hassanabidpk  and @mojosoeun\r\n\r\n### Contact\r\nmojosoeun@gmail.com",
   "note": "Don't delete this file! It's used internally to help with page regeneration."
 }
