@@ -2,7 +2,7 @@
 <html lang="en-us">
   <head>
     <meta charset="UTF-8">
-    <title>BeatBeat</title>
+    <title>Beatbeat by DjangoGirlsSeoul</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
@@ -11,7 +11,7 @@
   </head>
   <body>
     <section class="page-header">
-      <h1 class="project-name">BeatBeat</h1>
+      <h1 class="project-name">Beatbeat</h1>
       <h2 class="project-tagline"></h2>
       <a href="https://github.com/DjangoGirlsSeoul/BeatBeat" class="btn">View on GitHub</a>
       <a href="https://github.com/DjangoGirlsSeoul/BeatBeat/zipball/master" class="btn">Download .zip</a>
@@ -19,42 +19,163 @@
     </section>
 
     <section class="main-content">
-      <h3>
-<a id="beatbeat" class="anchor" href="#beatbeat" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h3>
+      <h1>
+<a id="beatbeat" class="anchor" href="#beatbeat" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>BeatBeat</h1>
 
-<p>스마트하게 음악을 눈으로 즐기 수 잇는 프로젝트입니다! Google Speech api를 이용하여 SoundCloud의 음악을 검색 한 후, Play하면 사운드를 LED Matrix에 시각화 해줍니다. 우리는 이 프로젝트를 위해 소프트웨어 측면에서는 Google Speech api, Python, Gstreamer, Cava를 이용 했고, 하드웨어는 라즈베리파이와 32 X 32 LED Matrix를 이용 했어요! 함께 음악을 눈으로 즐겨 볼까요? </p>
-      <p>This project is about visualizing sound pulses on RGB LED Matrix. We use Google Speech API to convert speech to text, use it as query parameter for SoundCloud Api, and finally playback the recommended song using Gstreamer player, and at the same time show visualization on RGB LED Matrix.
+<h2>
+<a id="description" class="anchor" href="#description" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Description</h2>
 
-Until now, we have achieved first milestone of simulating the visualization using Cava on raspberry pi's terminal. Showing actual output on RGB Led Matrix (32x32) is work in progress.</p>
-      <h4>Libraries and Hardware Used </h4>
-      <p> 1.Raspberry Pi 2 </p>
-      <p> 2.Google Speech API (Python library) </p>
-      <p> 3.Cava </p>
-      <p> 4.Gstreamer player </p>
-      <p> 5.RGB LED Matrix (32x32) </p>
-      <p> 6. Bluemoon USB Mic </p>
-      <p> 7. Speakers </p>
+<p>This project is about visualizing sound pulses on RGB LED Matrix. We use Google Speech API to convert
+speech to text, use it as query parameter for SoundCloud Api, and finally playback the recommended song using Gstreamer player, and at the same time show visualization on RGB LED Matrix.</p>
+
+<p>Until now, we have achieved first milestone of simulating the visualization using <a href="http://karlstav.github.io/cava/">Cava</a> on raspberry pi's terminal.
+Showing actual output on RGB Led Matrix (32x32) is work in progress.</p>
+
+<h4>
+<a id="libraries-and-hardware-used" class="anchor" href="#libraries-and-hardware-used" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Libraries and Hardware Used</h4>
+
+<ol>
+<li>Raspberry Pi 2</li>
+<li>
+<a href="https://cloud.google.com/speech/">Google Speech API</a> (Python library)</li>
+<li>Cava</li>
+<li>Gstreamer player</li>
+<li><a href="https://www.adafruit.com/product/607">RGB LED Matrix (32x32)</a></li>
+<li>Bluemoon USB Mic</li>
+<li>Speakers</li>
+</ol>
+
+<h2>
+<a id="how-to-run-this-code" class="anchor" href="#how-to-run-this-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>How to run this code</h2>
 
 <h3>
-<a id="video" class="anchor" href="#video" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Video</h3>
-<div style="text-align: center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Ra8SwRI85_w" frameborder="0" allowfullscreen></iframe>
-      </div>  
+<a id="setup" class="anchor" href="#setup" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Setup</h3>
+
+<p>Before running these samples perform the steps:</p>
+
+<ul>
+<li>
+<p>Clone this repo</p>
+
+<pre><code>git clone https://github.com/DjangoGirlsSeoul/BeatBeat.git
+cd BeatBeat
+</code></pre>
+</li>
+<li>
+<p>Create a [virtualenv][virtualenv]</p>
+
+<pre><code>virtualenv env
+source env/bin/activate
+</code></pre>
+</li>
+</ul>
+
 <h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Authors and Contributors</h3>
+<a id="install-the-dependencies" class="anchor" href="#install-the-dependencies" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Install the dependencies</h3>
 
-<p><a href="https://github.com/jinpark" class="user-mention">@jinpark</a>, <a href="https://github.com/hassanabidpk" class="user-mention">@hassanabidpk</a> and <a href="https://github.com/mojosoeun" class="user-mention">@mojosoeun</a></p>
-
-<h3>Licence</h3>
-<p> MIT </p>
+<div class="highlight highlight-source-shell"><pre>pip install -r requirements.txt</pre></div>
 
 <h3>
-<a id="contact" class="anchor" href="#contact" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Contact</h3>
+<a id="google-cloud-speech-api" class="anchor" href="#google-cloud-speech-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Google Cloud Speech API</h3>
 
-<p><a href="mailto:mojosoeun@gmail.com">mojosoeun@gmail.com</a></p>
+<h3>
+<a id="prerequisites" class="anchor" href="#prerequisites" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Prerequisites</h3>
+
+<h3>
+<a id="enable-the-speech-api" class="anchor" href="#enable-the-speech-api" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Enable the Speech API</h3>
+
+<p>If you have not already done so,
+<a href="https://console.cloud.google.com/apis/api/speech.googleapis.com/overview">enable the Google Cloud Speech API for your project</a>.
+You must be whitelisted to do this.</p>
+
+<h3>
+<a id="set-up-to-authenticate-with-your-projects-credentials" class="anchor" href="#set-up-to-authenticate-with-your-projects-credentials" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Set Up to Authenticate With Your Project's Credentials</h3>
+
+<p>The code uses a service account for OAuth2 authentication.
+So next, set up to authenticate with the Speech API using your project's
+service account credentials.</p>
+
+<p>Visit the <a href="https://console.cloud.google.com">Cloud Console</a>, and navigate to:
+<code>API Manager &gt; Credentials &gt; Create credentials &gt;
+Service account key &gt; New service account</code>.
+Create a new service account, and download the json credentials file.</p>
+
+<p>Then, set
+the <code>GOOGLE_APPLICATION_CREDENTIALS</code> environment variable to point to your
+downloaded service account credentials before running this example:</p>
+
+<pre><code>export GOOGLE_APPLICATION_CREDENTIALS=/path/to/your/credentials-key.json
+</code></pre>
+
+<p>If you do not do this, the REST api will return a 403. The streaming sample will
+just sort of hang silently.</p>
+
+<p>See the
+<a href="https://cloud.google.com/docs/authentication#developer_workflow">Cloud Platform Auth Guide</a>
+for more information.</p>
+
+<h3>
+<a id="soundcloud" class="anchor" href="#soundcloud" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>SoundCloud</h3>
+
+<p>Obtain API Key (client id) from here[<a href="https://developers.soundcloud.com/">https://developers.soundcloud.com/</a>] and add to <code>speech_streaming.py</code></p>
+
+<h3>
+<a id="troubleshooting" class="anchor" href="#troubleshooting" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Troubleshooting</h3>
+
+<h4>
+<a id="portaudio-on-os-x" class="anchor" href="#portaudio-on-os-x" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>PortAudio on OS X</h4>
+
+<p>If you see the error</p>
+
+<pre><code>fatal error: 'portaudio.h' file not found
+</code></pre>
+
+<p>Try adding the following to your ~/.pydistutils.cfg file,
+substituting in your appropriate brew Cellar directory:</p>
+
+<pre><code>include_dirs=/usr/local/Cellar/portaudio/19.20140130/include/
+library_dirs=/usr/local/YourUsername/homebrew/Cellar/portaudio/19.20140130/lib/
+</code></pre>
+
+<h2>
+<a id="run-the-code" class="anchor" href="#run-the-code" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Run the Code</h2>
+
+<ul>
+<li>
+<p>To run the <code>speech_streaming.py</code> code:</p>
+
+<div class="highlight highlight-source-shell"><pre>$ python speech_streaming.py</pre></div>
+
+<p>You should see a response with the transcription result and Sound cloud track result.</p>
+
+<p>The code will run in a continuous loop, printing the data and metadata
+it receives from the Speech API, which includes alternative transcriptions. Say "stop" to exit the loop.</p>
+
+<p>Note that the <code>speech_streaming.py</code> sample does not yet support python 3, as
+the upstream <code>grpcio</code> library's support is <a href="https://github.com/grpc/grpc/issues/282">not yet
+complete</a>.</p>
+</li>
+<li><p>To see the audio visualization simulation. <code>git clone</code> the <a href="https://github.com/karlstav/cava">cava respository</a> and run it in a new terminal.</p></li>
+</ul>
+
+<h3>
+<a id="deactivate-virtualenv" class="anchor" href="#deactivate-virtualenv" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Deactivate virtualenv</h3>
+
+<pre><code>deactivate
+</code></pre>
+
+<h3>
+<a id="to-do" class="anchor" href="#to-do" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>TO-DO</h3>
+
+<ul>
+<li>Instead of showing output throug Cava, our goal is to show sound visualization on <a href="https://www.adafruit.com/product/607">RGB LED Matrix</a>
+</li>
+</ul>
 
       <footer class="site-footer">
-        <span class="site-footer-owner"><a href="https://github.com/DjangoGirlsSeoul/BeatBeat">BeatBeat</a> is maintained by <a href="https://github.com/jinpark" class="user-mention">@jinpark</a>, <a href="https://github.com/hassanabidpk" class="user-mention">@hassanabidpk</a> and <a href="https://github.com/mojosoeun" class="user-mention">@mojosoeun</a>.</span>
+        <span class="site-footer-owner"><a href="https://github.com/DjangoGirlsSeoul/BeatBeat">Beatbeat</a> is maintained by <a href="https://github.com/DjangoGirlsSeoul">DjangoGirlsSeoul</a>.</span>
+
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a> using the <a href="https://github.com/jasonlong/cayman-theme">Cayman theme</a> by <a href="https://twitter.com/jasonlong">Jason Long</a>.</span>
       </footer>
 
     </section>
