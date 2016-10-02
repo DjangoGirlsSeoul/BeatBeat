@@ -10,8 +10,9 @@ sock.sendall('1;1;1;1;1;1;1;1;1;1;1;1;')
 #     time.sleep(0.1)
 #     sock.sendall('1;1;{};1;1;1;1;7;5;1;1;1;'.format(i+1))
 
-while True:
-    with open('/tmp/cava', 'r', 0) as cava:
+with open('/tmp/cava', 'r', 0) as cava:
+    while True:    
             line = cava.readline()
+            print(line)
             sock.sendall(line)
-    time.sleep(0.1)
+            time.sleep(0.08)
