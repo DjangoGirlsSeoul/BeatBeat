@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:/Users/hassanabid/Documents/hassan/GDE_code/hackfair/speech_macos_ios/ios-docs-samples/speech/Swift/Speech-gRPC-Streaming/BeatBeat.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>

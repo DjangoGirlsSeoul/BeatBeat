@@ -1,0 +1,18 @@
+The Protocol Buffer toolchain (as of 9/2/16) has some problems 
+that make manual intervention required to build this example.
+
+To fix these problems, replace any of the following failing 
+import statements:
+
+#import "google/cloud/speech/v1beta1/CloudSpeech.pbobjc.h"
+#import "google/api/Annotations.pbobjc.h"
+#import "google/longrunning/Operations.pbobjc.h"
+#import "google/rpc/Status.pbobjc.h"
+
+with the corresponding imports:
+
+#import <googleapis/CloudSpeech.pbobjc.h>
+#import <googleapis/Annotations.pbobjc.h>
+#import <googleapis/Operations.pbobjc.h>
+#import <googleapis/Status.pbobjc.h>
+

@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "3056082EEFB6B8A7B99895D8B1D45CA16896C2FC",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "AAF94D7346265A4DB1A92882FC2837B58FE1B664" : 9223372036854775807,
+    "3056082EEFB6B8A7B99895D8B1D45CA16896C2FC" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "2EF25A29-9D11-4CB3-9610-25BBC5E5016D",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "AAF94D7346265A4DB1A92882FC2837B58FE1B664" : "speech_macos_ios\/ios-docs-samples\/speech\/Swift\/Speech-gRPC-Streaming\/",
+    "3056082EEFB6B8A7B99895D8B1D45CA16896C2FC" : "BeatBeat\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BeatBeat",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ios_app\/BeatBeat.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/DjangoGirlsSeoul\/BeatBeat.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "3056082EEFB6B8A7B99895D8B1D45CA16896C2FC"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hassanabidpk\/BeatBeat_ios.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "AAF94D7346265A4DB1A92882FC2837B58FE1B664"
+    }
+  ]
+}
