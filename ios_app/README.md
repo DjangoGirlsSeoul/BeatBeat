@@ -4,6 +4,8 @@ This app demonstrates how to make streaming gRPC connections to the [Cloud Speec
 
 It is modified to use with our Google Hackfair project! 
 
+<img src="images/screenshot.png">
+
 ## Prerequisites
 - An API key for the Cloud Speech API (See
   [the docs][getting-started] to learn more)
