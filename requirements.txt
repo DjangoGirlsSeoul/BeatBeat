@@ -1,4 +1,4 @@
-Pillow==2.6.1
+Pillow==9.0.0
 PyAudio==0.2.8
 RPi.GPIO==0.6.2
 RTIMULib==7.2.1
